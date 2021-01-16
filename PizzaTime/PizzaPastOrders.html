@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+     <!-- copied and paste the stylesheet(css) from getbootstrap.com (before loading all other stylesheets) -->
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/PizzPastOrders.css">
+</head>
+<body>
+    <div id=header>
+        <h1>PIZZA PETE'S</h1>
+        <!-- Start of navbar(getbootstrap.com/navbar(NAV SECTION)) -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ORDER</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ACCOUNT</a>
+                  </li>
+                  <!-- Added another nav item to the OG -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">LOGOUT</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+        </nav>
+           <!-- End of navbar(getbootstrap.com/navbar(NAV SECTION)) -->
+        <h2>Account Info</h2>
+        <h2>Past Orders</h2>
+    </div>
+    
+    <div id=wrapper>
+        <div class="box1">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustomUsername" class="form-label">Email/Username</label>
+                  <!--^^ Added (Email/)to form label^^^ -->
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Please choose a username.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label">City</label>
+                  <input type="text" class="form-control" id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom04" class="form-label">State</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">UPDATE</button>
+                <!--^^^^ changed button label/copied pasted button from(getbootstrap.com  form section)^^^ -->
+              
+            </div>
+            <!--^^^ End of form div -->
+        </div>
+        <!--^^^ End of first box div -->
+        <div class="box2">
+            <div id=top>
+                1/4/2021
+                <input type="checkbox" id="mealfavorite" name="pizzafav" value="favorite">
+                <label for="pizzafav"> Favorite</label><br>
+                <p>Large * Pineapple Onion $12.99</p>
+                <hr>
+                1/1/2021
+                <input type="checkbox" id="mealfavorite" name="pizzafav" value="favorite">
+                <label for="pizzafav"> Favorite</label><br>
+                <p>Large * Pepperoni, Olive 13.99</p>
+                <hr>
+
+            </div>
+        </div>
+    </div>
+    <!--^^^ End of wrapper div -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> 
+    <!-- copied and pasted js from (getbootstrap.com) -->
+</body>
+</html>

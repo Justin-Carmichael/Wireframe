@@ -1,0 +1,38 @@
+body{
+    /* background-color: #cccccc; */
+    background-image: url(../img/retina_wood.png);
+}
+
+#container{
+    display: inline-block;
+    width: 50%;
+    
+}
+
+.input-group mb-3{
+    display: inline-block;
+}
+
+.nav-item{
+    margin-left: 60mm;
+}
+
+#wrapper{
+    display: inline-block;
+    width: 100%;
+}
+
+h2{
+    margin-left: 39%;
+}
+
+.form-select{
+width: 75%;
+margin-left: 10%
+}
+
+#toppings{
+    display: inline-block;
+    border: 2px red dotted;
+    width: %;
+}

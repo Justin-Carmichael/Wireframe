@@ -1,0 +1,48 @@
+#wrapper{
+    display: inline-block;
+
+
+}
+.box1{
+    display: inline-block;
+
+    height: 100mm;
+    width: 150mm;
+    margin-left: 7mm;
+    vertical-align: top;
+    margin-top: 5mm;
+}
+
+.box2{
+    display: inline-block;
+    height: 100mm;
+    width: 135mm;
+    margin-left: 20mm;
+    vertical-align: top;
+    margin-top: 5mm;
+}
+
+
+body{
+    display: inline-block;
+    background-image: url(../img/food.png)
+}
+
+h2{
+    display: inline-block;
+    margin-left: 73mm;
+}
+
+.nav-item{
+    margin-left: 60mm;
+    font-weight: bold;
+}
+
+h1{
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+.container-fluid{
+    background-image: url(../img/cork-board.png)
+}

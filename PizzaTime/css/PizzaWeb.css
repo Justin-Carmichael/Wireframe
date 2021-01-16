@@ -1,0 +1,39 @@
+header{
+    display: inline-block;
+    border: 4px orange dotted;
+    width: 100%;
+    
+    
+}
+
+h1{
+    display: inline-block;
+    margin-right: 60%;
+}
+
+p{
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 81%;
+}
+
+body{
+     margin: 2%;
+     background-image: url(../img/cork-board.png);
+}
+
+h2{
+    display: inline-block;}
+
+.form-label{
+    font-weight: bold;
+}
+
+.invalid-feedback{
+    font-weight: bold;
+
+}
+
+.col-form-label{
+    font-weight: bold;
+}

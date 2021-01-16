@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+     <!-- copied and paste the stylesheet(css) from getbootstrap.com (before loading all other stylesheets) -->
+    <title>craft-a-pizza</title>
+    <link rel="stylesheet" type="text/css" href="css/CraftPizza.css">
+</head>
+<body>
+    <div id="header">
+        <h1>PIZZA PETE'S</h1>
+        <!-- Start of navbar(getbootstrap.com/navbar(NAV SECTION)) -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ORDER</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ACCOUNT</a>
+                  </li>
+                  <!-- Added another nav item to the OG -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">LOGOUT</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </div>
+    <div id=wrapper>
+        <h2>CRAFT-A-PIZZA</h2>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>METHOD</option>
+            <option value="1">CarryOut</option>
+            <option value="2">Delivery</option>
+            <option value="3">DoorDash</option>
+        </select>
+    </div>
+    <!-- Buttons with dropdowns(#2)getbootstrap.com Forms/input groups -->
+    <div id=container>
+
+    
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Size</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <!-- Buttons with dropdowns(#2)getbootstrap.com Forms/input groups -->
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Crust</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <!-- Buttons with dropdowns(#2)getbootstrap.com Forms/input groups -->
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">QTY</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- begining of topping checklist box -->
+    <div id=toppings>
+        <input type="checkbox" id="toppings1" name="toppings1" value="Pepperoni">
+        <label for="vehicle1"> Pepperoni</label>
+        <input type="checkbox" id="toppings2" name="toppings2" value="Meat Lovers">
+        <label for="vehicle2"> Meat Lovers</label>
+        <input type="checkbox" id="toppings3" name="toppings3" value="Cheese">
+        <label for="vehicle3"> Cheese</label><br>
+        <input type="checkbox" id="toppings4" name="toppings4" value="Mushrooms">
+        <label for="vehicle1"> Mushroom</label>
+        <input type="checkbox" id="toppings5" name="toppings5" value="Pineapple">
+        <label for="vehicle2"> Pineapple</label>
+        <input type="checkbox" id="toppings6" name="toppings6" value="Bacon">
+        <label for="vehicle3"> Bacon</label><br>
+        <input type="checkbox" id="toppings7" name="toppings7" value="Spinach">
+        <label for="vehicle1"> Spinach</label>
+        <input type="checkbox" id="toppings8" name="toppings8" value="Onion">
+        <label for="vehicle2"> Onion</label>
+        <input type="checkbox" id="toppings9" name="toppings9" value="Olive">
+        <label for="vehicle3"> Olive</label><br>
+        <input type="checkbox" id="toppings10" name="toppings10" value="Basil">
+        <label for="vehicle1"> Basil</label>
+        <input type="checkbox" id="toppings11" name="toppings11" value="Tomato">
+        <label for="vehicle2"> Tomato</label>
+        <input type="checkbox" id="toppings12" name="toppings12" value="Pesto">
+        <label for="vehicle3"> Pesto</label><br>
+        <input type="checkbox" id="toppings13" name="toppings13" value="Chicken">
+        <label for="vehicle1"> Chicken</label>
+        <input type="checkbox" id="toppings14" name="toppings14" value="Ham">
+        <label for="vehicle2"> Ham</label>
+        <input type="checkbox" id="toppings15" name="toppings15" value="Beef">
+        <label for="vehicle3"> Beef</label><br>
+    </div>
+    <button type="submit" class="btn btn-primary">ADD TO ORDER</button>
+                <!--^^^^ changed button label/copied pasted button from(getbootstrap.com  form section)^^^ -->
+    <!--End of Buttons with dropdowns(#2)getbootstrap.com Forms/input groups -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> 
+    <!-- copied and pasted js from (getbootstrap.com) -->
+</body>
+</html>
