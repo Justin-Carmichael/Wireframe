@@ -1,0 +1,74 @@
+Overall:
+
+1. Minimize width in menu/navbar. Options are spaced out too far.
+
+2. Add CSS Reset to remove extra padding, margins, etc. from each element.
+   Helps your designs be more standard throughout. (Add suggestion on CraftPizza.html file).
+
+3. For good web photos go to www.unsplash.com
+
+4. Add cards throughout your web design. You can look up bootstrap cards.
+
+5. Capitalize first letter of comments.
+
+6. Great indentation! (I made minor updates.)
+
+7. Great front end start overall.
+
+8. Keep consistency in text for menu style. Either have all menu item's be like Home or like ORDER
+
+9. Rename folder from Wireframe. Needs to be specific to the project. Maybe rename to Pizza Petes.
+
+CraftPizza.html:
+
+1. Line 32 - What is OG mean in your comments?
+
+2. Update comments to be explain what each section is rather than where you got the code from.
+For example: Menubar, Toppings Checkbox Section, Order Methods - Carry Out, Delivery, Doordash
+
+3. Capitalize first letter of comments.
+For example: Line 7 should be "Copied and pasted."
+
+4. Put comments above the line of code it represents instead of below.
+For example: Line 6 & Line 7 should switch.
+
+5. Add comments detailing your Order Method dropdown menu.
+
+6. Styling suggestion: Have background be white or a light gray before determining background.
+Once you decide a good background color scheme you can copy those thoughout all of your webpages for consistency.
+
+PizzaPastOrders.html:
+
+1. H2 Account Info needs to be in div with corresponing form.
+
+2. H2 Past Orders needs to be in div with corresponding information.
+
+3. Background looks good. Have the same for menu bar or potentially make menubar have shadows or 3d to stand out.
+
+4. Update title to page.
+
+PizzaQK.html
+
+1. Remove div's that are commented out. You are correct they aren't needed.
+
+2. Good layout!
+
+3. Minimize spacing between cards and spacing between cards and heading.
+
+PizzaWeb.html
+
+1. Good form design!
+
+2. Remove brown background to match rest of pages once you determine a layout for the site.
+
+3. Add states to dropdown.
+
+4. Add pop up or page that contains terms and conditions. Doesn't have to be much, can start off as Lorem Ipsum.
+
+5. Rename page better from PizzaWeb. Should be something like Registration or something.
+
+PizzaWelcome.html
+
+1. Rename to Index.html if this is the homepage. That is coding standard.
+
+2. Looks good overall! Just stretch background image.
