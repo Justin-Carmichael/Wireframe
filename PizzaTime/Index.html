@@ -5,35 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Copied and paste the stylesheet(css) from getbootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <title>Pizza Time/Index</title>
+    <title>Pizza Pete's | Login</title>
     <link rel="stylesheet" type="text/css" href="css/Index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id=header> 
         <h1>PIZZA PETE'S</h1>
-        <p>Already Have an Account? Login</p> 
+        <p id="login">Already Have an Account? Login</p> 
     </div>
 
 <!-- Start of card -->
     <div class="card">
         <div class="card-body">
             <h2>Welcome Back!</h2>
-            <div id=wrapper>
-                <!-- Start of form source from getbootscrap -->
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email address</label>
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp " class="form-text text-muted email-note">We'll never share your email with anyone else.</small>
                 </div>
-                <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                 </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
-        
-            </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
         </div>
-      </div>
-      <!-- End of card -->
+    </div>
+    <!-- End of card -->
 
     
     <!-- Copied and pasted js from (getbootstrap.com) -->
