@@ -1,51 +1,107 @@
-/* CSS Reset Begin */
+/* CSS Reset Begin */ 
 * {
     margin: 0;
     padding: 0;
     font-size: 1em;
     font-family: inherit;
   }
-  
-  html {
-    font-size: 62.5%;
-  }
 /* CSS Reset End */
 
 body{
     /* background-color: #cccccc; */
-    background-image: url(../img/retina_wood.png);
+    background-image: url(../img/wallpaper.jpg);
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+
 }
 
 #container{
     display: inline-block;
     width: 50%;
+    height: 60%;
     
 }
 
-.input-group mb-3{
-    display: inline-block;
-}
+ .input-group{
+    margin-left: 20%;
+} 
 
 .nav-item{
-    margin-left: 60mm;
+    margin-left: 10%;
+    font-size: large;
+    font-weight: bold;
+    background-color: oldlace;
+
+}
+
+.container-fluid{
+    background-color:oldlace;
+}
+
+.navbar {
+    background-color: oldlace;
+    font-family: cursive, sans-serif, fantasy;
+    margin-bottom: 1%;
 }
 
 #wrapper{
     display: inline-block;
     width: 100%;
+    height: 100%;
+}
+
+h1{
+    font-family: cursive, sans-serif, fantasy;
 }
 
 h2{
     margin-left: 39%;
+    font-size: xx-large;
+    font-family: cursive, sans-serif, fantasy;
 }
 
 .form-select{
-width: 75%;
-margin-left: 10%
+width: 50%;
+margin-left: 9%
 }
 
-#toppings{
+.toppings{
     display: inline-block;
-    border: 2px red dotted;
-    width: %;
+    width: 10%;
+    height: 30%;
+}
+
+.card{
+    background-image: url(../img/wallpaper.jpg);
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.card2{
+    display: inline-block;
+    position: absolute;
+    left: 64%;
+    top: 25%;
+    background-color: oldlace;
+    font-family: cursive, sans-serif, fantasy;
+       
+}
+
+.card-title{
+    margin-left: 20%;
+    font-family: cursive, sans-serif, fantasy;
+}
+
+.form-select{
+    margin-bottom: %;
+}
+
+.btn1{
+    display: block;
+    width: 40%;
+    position: absolute;
+    right: 50%;
+    top: 95%;
 }

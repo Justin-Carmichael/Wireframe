@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Copied and paste the stylesheet(css) from getbootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="css/Registration.css">
+</head>
+<body>
+    <div id=header> 
+        <h1>PIZZA PETE'S</h1>
+        <a href="http://127.0.0.1:5500/PizzaTime/Index.html">Already Have an Account? Login</a> 
+        <!-- begining of Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <!-- Linked pages in the navbar -->
+                  <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/PizzaTime/Index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:5500/PizzaTime/QuickOptions.html">ORDER</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:5500/PizzaTime/Registration.html">ACCOUNT</a>
+                </li>
+                <!-- Added (LOGOUT) item to the original navbar content -->
+                <li class="nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:5500/PizzaTime/Index.html">LOGOUT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+      <!-- End of navbar -->
+        
+       
+    </div>
+    <div id=wrapper>
+      <div class="card">
+        <div class="card-body">
+          <!-- Begining of custom styles (pulled from get bootstrap.com/form/validation) -->
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" value=>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" value=>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!--Added (Email/)to form label -->
+            <label for="validationCustomUsername" class="form-label">Email/Username</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom03" class="form-label">City</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationCustom04" class="form-label">State</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Choose...</option>
+              <option>AL</option>
+              <option>AK</option>
+              <option>AZ</option>
+              <option>AR</option>
+              <option>CA</option>
+              <option>CO</option>
+              <option>CT</option>
+              <option>DE</option>
+              <option>FL</option>
+              <option>GA</option>
+              <option>HI</option>
+              <option>ID</option>
+              <option>IL</option>
+              <option>IN</option>
+              <option>IA</option>
+              <option>KS</option>
+              <option>KY</option>
+              <option>LA</option>
+              <option>ME</option>
+              <option>MD</option>
+              <option>MA</option>
+              <option>MI</option>
+              <option>MN</option>
+              <option>MS</option>
+              <option>MO</option>
+              <option>MT</option>
+              <option>NE</option>
+              <option>NV</option>
+              <option>NH</option>
+              <option>NJ</option>
+              <option>NM</option>
+              <option>NY</option>
+              <option>NC</option>
+              <option>ND</option>
+              <option>OH</option>
+              <option>OK</option>
+              <option>OR</option>
+              <option>PA</option>
+              <option>RI</option>
+              <option>SC</option>
+              <option>SD</option>
+              <option>TN</option>
+              <option>TX</option>
+              <option>UT</option>
+              <option>VT</option>
+              <option>VA</option>
+              <option>WA</option>
+              <option>WV</option>
+              <option>WI</option>
+              <option>WY</option>
+
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationCustom05" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+              Please provide a valid zip.
+            </div>
+          </div>
+          <!-- Begining of terms and conditions checkbox -->
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+                <!-- Begining of card for terms and conditions checkbox -->
+                <div class="card">
+                  <div class="card-body" id="termsAndConditions">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos, beatae sit accusamus illum numquam aliquid, eum autem maiores laudantium minus ipsum similique qui doloribus est, iste provident laborum hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, aut non suscipit ab consequuntur quidem! Facilis, similique non nisi praesentium incidunt, maxime doloremque eos consectetur aperiam odit debitis cum?Autem? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus dolorem sit velit qui veniam numquam rerum in harum, molestiae quod quisquam hic fuga dolores quas temporibus ex autem laudantium beatae.
+                  </div>
+                  <!-- End of card for terms and conditions checkbox  -->
+                </div>
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+            <!-- End of terms and condition checkbox -->
+          </div>
+          <!--Begining of (Inline text for password)copied and pasted from getbootstrap.com/forms  -->
+          <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label">Password</label>
+              </div>
+              <div class="col-auto">
+                <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+              <div class="col-auto">
+                <span id="passwordHelpInline" class="form-text">
+                  Must be 8-20 characters long.
+                </span>
+              </div>
+          </div>
+          <!--^^^End of (Inline text for password)copied and pasted from getbootstrap.com/forms^^^  -->
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Sign Up</button>
+            <!--^^ Changed button type to (sign up from submit)^^ -->
+          </div>
+      </form>
+        <!-- ^^^End of custom styles (pulled from get bootstrap.com/form/validation)^^^ -->
+  </div>
+        </div>
+      </div> 
+      <!-- End of card -->
+        
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/Registration.js"></script>
+</html>
