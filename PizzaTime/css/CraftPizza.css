@@ -16,12 +16,12 @@ body{
 
 }
 
-#container{
+ /* #container{
     display: inline-block;
     width: 50%;
     height: 60%;
-    
-}
+     
+} */
 
  .input-group{
     margin-left: 20%;
@@ -94,9 +94,9 @@ margin-left: 9%
     font-family: cursive, sans-serif, fantasy;
 }
 
-.form-select{
+/* .form-select{
     margin-bottom: %;
-}
+} */
 
 .btn1{
     display: block;

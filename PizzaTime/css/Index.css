@@ -49,6 +49,10 @@ p{
     background-image: url(../img/wallpaper.jpg)
 }
 
+.card-body{
+    width: 50%;
+    margin-left: 25%;
+}
 
 #login{
     color: #5d666e;

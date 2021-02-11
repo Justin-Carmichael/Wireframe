@@ -55,8 +55,15 @@ button{
 .card{
     display: inline-block;
     width: 25%;
-    margin: 0.5%;
+    margin-left: 4%;
+    margin-top: 1%;
     vertical-align: top;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 15px 20px;
+    background-color: rgb(241, 241, 212);
+}
+    
 }
 
 .card-body{
