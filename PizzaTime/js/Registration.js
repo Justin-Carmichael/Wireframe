@@ -1,10 +1,13 @@
+// Start JQuery when webpage loads.
 $(document).ready(function() 
-{
-    $( "#invalidCheck" ).click(function() 
+{   
+    //Checks to see if termsAndConditionsLink is clicked.
+    $( "#termsAndConditionsLink" ).click(function() 
     {
-        $( "#termsAndConditions" ).toggle( "slow", function()
+        //If termsAndConditionsLink is clicked, then toggle (show/hide) the termsAndConditionsCard
+        $( "#termsAndConditionsCard" ).toggle( "slow", function()
         {
-            // Animation complete.
+            //Animation Activates (Toggling Slowly)
         });
     });
 });

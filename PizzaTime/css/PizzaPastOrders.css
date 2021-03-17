@@ -1,11 +1,11 @@
-/* CSS Reset Begin */ 
+/* CSS Reset */
 * {
     font-family: inherit;
     font-size: 1em;
     margin: 0;
     padding: 0;
-  }
-/* CSS Reset End */
+}
+/* End of css reset */
 
 /* Added imported font from google */
 body{
@@ -13,28 +13,19 @@ body{
     display: inline-block;
     font-family: 'Open Sans Condensed', sans-serif;
     height: 100%;
-    width: 100%;
+    width:100%;
 }
 
 h1{
-    font-weight: 700;
-}
-
-
-h2{
-    font-size: xx-large;
-    margin-left: 39%;
-}
-
-h5{
-    margin-left: 40%;
+    margin-left: 2%;
+    margin-top: 1%;
 }
 
 /* Color of navbar changed to oldlace */
 .navbar {
     background-color: oldlace;
-    margin-bottom: 1%;
 }
+
 
 .container-fluid{
     background-color:oldlace;
@@ -53,39 +44,34 @@ h5{
 
 .nav-item{
     background-color: oldlace;
-    margin-left: 10%;
+    margin-left: 6mm;
+}
+
+#wrapper{
+    display: inline-block;
+    height: 100%;
+    width: 90%;
 }
 
 /* Imported boxshadows dimensions from generator */
 .card{
     background-color: rgb(241, 241, 212);
-    border: none;
     box-shadow: 5px 5px 15px 5px #000000;
-    display: inline-block;
-    height: 60%;
-    padding: 3mm;
-    position: absolute;
-    right: 21%;
-    top: 16%;
-    -webkit-box-shadow: 5px 5px 15px 5px #000000;
-    width: 60%;
+    margin-left: 6%;
+    margin-top: 7%;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
 }
 
-
-.card2{
-    border: black solid;
-    border-radius: 10px;
-    display: inline-block;
-    width: 100%;
-}
-
-
+/* Curved the edges of the titles  */
+/* Centered text in card title */
 .card-title{
-    margin-bottom: 3%;
-    margin-left: 33%;
+    border-radius: 15px;
+    font-weight: 700;
+    text-align: center;
+    
+    
 }
-
 
 .btn{
-    margin-top: 1.5%;
+    margin-left: calc(var(--bs-gutter-x)/ 2);
 }

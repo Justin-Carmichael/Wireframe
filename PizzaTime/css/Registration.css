@@ -1,57 +1,63 @@
+/* CSS Reset */
 * {
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
     font-family: inherit;
-    
-  }
-
-header{
-    display: inline-block;
-     width: 100%; 
-    
-    
+    font-size: 1em;
+    margin: 0;
+    padding: 0; 
 }
 
-h1{
-    display: inline-block;
-    margin-right: 60%;
-    font-family: cursive, sans-serif, fantasy;
-}
-
-a:hover {
-    color: red;}
-
-p{
-    display: inline-block;
-    font-weight: bold;
-    margin-left: 81%;
-}
-
+/* Added imported font from google */
 body{
-     
-     background-image: url(../img/wallpaper.jpg);
-
+    background-image: url(../img/wallpaper.jpg);
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
-h2{
+#header{
     display: inline-block;
+    width: 100%;   
 }
 
+/* Changed the background color for navbar */
 .navbar {
     background-color: oldlace;
-    font-family: cursive, sans-serif, fantasy;
 }
 
 .container-fluid{
     background-color:oldlace;
 }
 
+.navbar-brand{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+
+/* Logo's size within the navbar */
+#logo{
+    height: 35px;
+    width: 40px; 
+}
+
 .nav-item{
-    margin-left: 6mm;
-    font-weight: bold;
-    font-size: large;
     background-color: oldlace;
+    margin-left: 6mm;
+    
+}
+
+#login{
+    position: absolute;
+    right: 2%;
+}
+
+/* Imported boxshadows dimensions from generator */
+/* Position absolute to center card */
+.card{
+    background-color: rgb(241, 241, 212);
+    box-shadow: 5px 5px 15px 5px #000000;
+    position: absolute;
+    right: 21%;
+    top: 16%;
+    width: 70%;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;   
 }
 
 .form-label{
@@ -59,20 +65,23 @@ h2{
 }
 
 .invalid-feedback{
-    font-weight: bold;
-
-}
-
-.col-form-label{
+    color: #ff0000;
     font-weight: bold;
 }
 
-.card{
-    background-image: url(../img/wallpaper.jpg);
-    position: center;
-    margin-top: 2%;
+#termsAndConditionsLink{
+    color: blue;
+    text-decoration: underline;  
 }
 
-#termsAndConditions{
+/* Display changed to none so card would be hidden */
+/* Position absolute for placement of the card */
+#termsAndConditionsCard{
     background-color: #ffffff;
+    color: #000000;
+    display: none; 
+    padding: 4% 2%;
+    position: absolute;
+    top: 50%;
+    width: 65%;
 }

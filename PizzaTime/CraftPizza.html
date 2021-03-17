@@ -1,156 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Copied and pastes the stylesheet(css) from getbootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-     <!-- Copied and pastes the stylesheet(css) from getbootstrap -->
-    <title>craft-a-pizza</title>
+    <title>Craft Pizza</title>
     <link rel="stylesheet" type="text/css" href="css/CraftPizza.css">
     <!-- Start of Imported google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="header">
-        <!-- Start of navbar(getbootstrap.com/navbar (NAV SECTION)) -->
-        <!-- Deleted ending of navbar (the color of the navbar) -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">PizzaPete's</a>
-              <img src="img/logo2.png" alt="#" width="40" height="35">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <!-- Linked pages in the navbar -->
-                    <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/PizzaTime/Index.html">HOME</a>
-                    
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="http://127.0.0.1:5500/PizzaTime/QuickOptions.html">ORDER</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="http://127.0.0.1:5500/PizzaTime/Registration.html">ACCOUNT</a>
-                  </li>
-                  <!-- Added (LOGOUT) item to the original navbar content -->
-                  <li class="nav-item">
-                    <a class="nav-link" href="http://127.0.0.1:5500/PizzaTime/Index.html">LOGOUT</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
-    </div>
-    <div id=wrapper>
-      <!-- Start of Card -->
-      <div class="card">
-        <div class="card-body">
-
-          <div class="input-group mb-3">
-            <label class="input-group-text" for="inputGroupSelect01">Options</label>
-            <select class="form-select" id="inputGroupSelect01">
-              <option selected>Choose...</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          
-          <div class="input-group mb-3">
-            <select class="form-select" id="inputGroupSelect02">
-              <option selected>Choose...</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <label class="input-group-text" for="inputGroupSelect02">Options</label>
-          </div>
-          
-          <div class="input-group mb-3">
-            <button class="btn btn-outline-secondary" type="button">Button</button>
-            <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
-              <option selected>Choose...</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          
-          <div class="input-group">
-            <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-              <option selected>Choose...</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <button class="btn btn-outline-secondary" type="button">Button</button>
-          <!--End of form  -->
-          </div>
-
-          <!-- Begining of topping checklist box/ start of card -->
-          <div class="card2" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Toppings</h5>
-              <h6 class="card-subtitle mb-2 text-muted"></h6>
-              <p class="card-text">
-                <div id=toppings>
-                  <input type="checkbox" id="toppings1" name="toppings1" value="Pepperoni">
-                  <label for="vehicle1"> Pepperoni</label>
-                  <input type="checkbox" id="toppings2" name="toppings2" value="Meat Lovers">
-                  <label for="vehicle2"> Meat Lovers</label>
-                  <!-- <input type="checkbox" id="toppings3" name="toppings3" value="Cheese">
-                  <label for="vehicle3"> Cheese</label> --><br>
-                  <input type="checkbox" id="toppings4" name="toppings4" value="Mushrooms">
-                  <label for="vehicle1"> Mushroom</label>
-                  <input type="checkbox" id="toppings5" name="toppings5" value="Pineapple">
-                  <label for="vehicle2"> Pineapple</label>
-                  <!-- <input type="checkbox" id="toppings6" name="toppings6" value="Bacon">
-                  <label for="vehicle3"> Bacon</label> --><br>
-                  <input type="checkbox" id="toppings7" name="toppings7" value="Spinach">
-                  <label for="vehicle1"> Spinach</label>
-                  <input type="checkbox" id="toppings8" name="toppings8" value="Onion">
-                  <label for="vehicle2"> Onion</label>
-                  <input type="checkbox" id="toppings9" name="toppings9" value="Olive">
-                  <label for="vehicle3"> Olive</label><br>
-                  <input type="checkbox" id="toppings10" name="toppings10" value="Basil">
-                  <label for="vehicle1"> Basil</label>
-                  <input type="checkbox" id="toppings11" name="toppings11" value="Tomato">
-                  <label for="vehicle2"> Tomato</label>
-                  <input type="checkbox" id="toppings12" name="toppings12" value="Pesto">
-                  <label for="vehicle3"> Pesto</label><br>
-                  <input type="checkbox" id="toppings13" name="toppings13" value="Chicken">
-                  <label for="vehicle1"> Chicken</label>
-                  <input type="checkbox" id="toppings14" name="toppings14" value="Ham">
-                  <label for="vehicle2"> Ham</label>
-                  <input type="checkbox" id="toppings15" name="toppings15" value="Beef">
-                  <label for="vehicle3"> Beef</label><br>
-                </div>
-              </p>
-              <!-- Replaced link with a button -->
-              <a href="#" class="card-link">Add Topping</a>
-              
-            </div>
-          </div>
-        </div> 
-      <!-- End of card -->
-      </div>
-    
-    
-   <!-- Changed button label/copied pasted button from(getbootstrap.com  form section) --> 
-    <button type="submit" class="btn1 btn-primary">ADD TO ORDER</button>
-  
-    <!--End of Buttons with dropdowns(#2)getbootstrap.com Forms/input groups -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Start of Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">PizzaPete's</a>
+        <img src="img/pizzaLogoResized.png" alt="Pizza Pete's Logo" id="logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ORDER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ACCOUNT</a>
+            </li>
+            <!-- Added (LOGOUT) item to the original navbar content -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">LOGOUT</a>
+            </li>                 
+          </ul>
         </div>
-        <!-- End of Card -->
       </div>
-        
-    
-    <!-- Copied and pasted js from (getbootstrap.com) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> 
-    <!-- Copied and pasted js from (getbootstrap.com) -->
-</body>
+    </nav>
+    <!-- End of Navbar -->
+    <!-- Start of Card -->
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">Make-Your-Own</h1>
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="inputGroupSelect01">Sized</label>
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected>...</option>
+                  <option value="1">Small</option>
+                  <option value="2">Medium</option>
+                  <option value="3">Large</option>
+          </select>
+          <!--End of first option  -->
+        </div>
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="inputGroupSelect01">Crust</label>
+          <select class="form-select" id="inputGroupSelect02">
+            <option selected>...</option>
+                  <option value="1">Thin</option>
+                  <option value="2">Double Stuff</option>
+                  <option value="3">Hand Tossed</option>
+          </select>
+          <!--End of second option  -->
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Quantity</label>
+        </div>
+        <!-- End of quantity form -->
+        <div class="card2">
+          <!-- Beginging of toppings (card2)  -->
+          <div class="card-body">
+            <h5>Toppings</h5>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Cheese</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">Pepperoni</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">Chicken</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Bacon</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">Beef</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">Ham</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Spinach</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">Mushroom</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">Onion</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Olive</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">Pineapple</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">Basil</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Tomato</label>
+            </div>
+          </div>
+          <!-- End of card2 body -->
+        </div>
+        <!-- End of toppings card2 -->
+        <br>
+        <button class="btn btn-primary" type="button">Submit</button>
+        <!-- End of button -->
+      </div>
+      <!--End of card body  -->
+    </div>
+    <!-- End of card -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- Copied and pasted js from (getbootstrap.com) --> 
+  </body>
 </html>

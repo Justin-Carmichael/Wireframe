@@ -1,77 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-     <!-- copied and paste the stylesheet(css) from getbootstrap.com (before loading all other stylesheets) -->
-    <title>Pizza Time</title>
+    <!-- copied and paste the stylesheet(css) from getbootstrap.com (before loading all other stylesheets) -->
+    <title>Quick Options</title>
     <link rel="stylesheet" type="text/css" href="css/QuickOptions.css">
     <!-- Start of google imported font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
     <div id=header>         
-      <!-- Start of navbar(getbootstrap.com/navbar(NAV SECTION)) -->
+      <!-- Start of navbar -->
       <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">PizzaPete's</a>
-            <img src="img/logo2.png" alt="#" width="40" height="35">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/PizzaTime/Index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="http://127.0.0.1:5500/PizzaTime/CraftPizza.html">ORDER</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="http://127.0.0.1:5500/PizzaTime/Registration.html">ACCOUNT</a>
-                </li>
-                <!-- Added another nav item to the OG -->
-                <li class="nav-item">
-                  <a class="nav-link" href="http://127.0.0.1:5500/PizzaTime/Index.html">LOGOUT</a>
-                </li>                
-              </ul>
-            </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">PizzaPete's</a>
+          <img src="img/pizzaLogoResized.png" alt="Pizza Pete's Logo" id="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/PizzaTime/Index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:5500/PizzaTime/CraftPizza.html">ORDER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:5500/PizzaTime/Registration.html">ACCOUNT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:5500/PizzaTime/Index.html">LOGOUT</a>
+              </li>                
+            </ul>
           </div>
+        </div>
       </nav>
-      <!-- End of navbar(getbootstrap.com/navbar(NAV SECTION)) -->      
+      <!-- End of navbar -->      
     </div>
     <!-- End of Header div^^^ -->
 
-    <h2>QUICK OPTIONS</h2>
+    <h1>QUICK OPTIONS</h1>
     <div class="card-deck">
+      <!-- Card for cheese -->
       <div class="card">
         <img class="card-img-top" src="img/cheese.jpg" alt="Card image cap">
         <div class="card-body">
           <h2 class="card-title">Cheese</h2>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptatibus architecto aut ipsum obcaecati earum qui, velit cumque illum beatae, vel mollitia. Totam architecto magnam tempore eos reprehenderit sunt debitis?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam velit quod, repellendus maxime quae odit deleniti minus obcaecati doloribus, reiciendis, est odio inventore laudantium nulla!..</p>
         </div>
+        <button class="btn btn-primary">Order</button>
       </div>
+      <!-- Card for meat lovers -->
       <div class="card">
         <img class="card-img-top" src="img/meatLovers.jpg" alt="Card image cap">
         <div class="card-body">
           <h2 class="card-title">Meat Lovers</h2>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, hic. Fugiat possimus perferendis quod veritatis eaque! Mollitia odit quibusdam ducimus totam illo, aliquid quae nam unde ipsam eos corporis et?Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum id hic obcaecati maxime, ea voluptate impedit fugit distinctio expedita sunt delectus unde? Eligendi minima architecto impedit labore nisi, sit laboriosam!Lorem.</p>
         </div>
+        <button class="btn btn-primary">Order</button>
       </div>
+      <!-- Card of bbq chicken -->
       <div class="card">
         <img class="card-img-top" src="img/bbqChicken.jpg" alt="Card image cap">
         <div class="card-body">
           <h2 class="card-title">BBQ Chicken</h2>
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorem, rem consequatur commodi ex rerum porro exercitationem et vel quisquam esse repudiandae deserunt eum aspernatur. Rerum consequatur voluptates praesentium quae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti corrupti maiores ullam, accusantium reprehenderit adipisci qui. Assumenda sed facilis quis, reprehenderit dolore.</p>
         </div>
+        <button class="btn btn-primary">Order</button>
       </div>
     </div>
       <!-- Added a card groups from getbootstrap.com -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> 
     <!-- copied and pasted js from (getbootstrap.com) --> 
-</body>
+  </body>
 </html>
